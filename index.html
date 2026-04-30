@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dark Keep Prison</title>
+<style>
+body {margin:0;background:black;color:#d4af37;font-family:Georgia,serif;text-align:center;}
+.section {padding:80px 20px;border-bottom:1px solid rgba(212,175,55,0.2);}
+img {max-width:900px;width:90%;border:2px solid #d4af37;box-shadow:0 0 30px rgba(212,175,55,0.3);margin-bottom:30px;}
+pre {max-width:800px;margin:auto;white-space:pre-wrap;font-family:monospace;}
+button {margin-top:20px;background:none;border:1px solid #d4af37;color:#d4af37;padding:15px 30px;cursor:pointer;font-weight:bold;}
+button:hover {background:#d4af37;color:black;}
+</style>
+</head>
+<body>
+
+<div class="section">
+<img src="welcome.png">
+<pre>
+>> ACCESSING FACILITY...
+You are approaching Dark Keep Prison.
+Proceed at your own risk.
+</pre>
+<button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">ENTER</button>
+</div>
+
+<div class="section" id="story">
+<img src="inmates.png">
+<pre>
+Somewhere, away from prying eyes, lies a prison forgotten by the authorities.
+
+Long ago, the official staff left and now it is controlled by criminals.
+
+They arrest without reason.
+They show no mercy.
+
+No-one is safe.
+</pre>
+<button onclick="document.getElementById('rules').scrollIntoView({behavior:'smooth'})">CONTINUE</button>
+</div>
+
+<div class="section" id="rules">
+<img src="staff.png">
+<pre>
+OUTSIDE THE SAFE ZONE:
+ANYONE CAN BE ARRESTED AT ANY TIME
+
+By leaving the safe zone you consent to arrest and roleplay.
+
+No death RP.
+Avatar must appear adult.
+Limits must be visible.
+
+Cheating may result in ban.
+</pre>
+<button onclick="teleport()">ENTER PRISON</button>
+</div>
+
+<script>
+function teleport(){
+window.open("http://maps.secondlife.com/secondlife/GEL%20Community%207/206/240/2778");
+}
+</script>
+
+</body>
+</html>
